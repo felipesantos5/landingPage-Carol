@@ -1,0 +1,73 @@
+.footer {
+  background: url(../assets/footer/footer-background.png) no-repeat;
+  background-position-y: 244px;
+  overflow-x: hidden;
+  padding-top: 100px;
+
+  &__wrapper {
+    max-width: 1200px;
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    margin: 42px 0 25px;
+  }
+
+  &__number,
+  &__cep {
+    font-family: Fira Sans;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    color: #d6d6d6;
+  }
+
+  &__email {
+    font-family: Fira Sans;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    color: #f2c878;
+  }
+
+  &__option-wrapper {
+    display: flex;
+    gap: 73px;
+
+    margin-block: 65px;
+  }
+
+  &__item {
+    font-family: Abhaya Libre;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  &__midia-wrapper {
+    display: flex;
+    gap: 16px;
+
+    margin-bottom: 74px;
+  }
+
+  &__credits {
+    font-family: Fira Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: #858585;
+
+    margin-bottom: 73px;
+  }
+}

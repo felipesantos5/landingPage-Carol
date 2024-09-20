@@ -1,0 +1,30 @@
+.header {
+  height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__nav {
+    display: flex;
+    gap: 24px;
+
+    &-item {
+      font-family: "Saira";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 25px;
+      color: white;
+    }
+  }
+
+  &__social {
+    background: url(../assets/header/midia-container-header.svg) no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    height: 54px;
+    width: 194px;
+  }
+}

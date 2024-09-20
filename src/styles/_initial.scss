@@ -1,0 +1,64 @@
+.initial {
+  max-width: 1200px;
+  width: calc(100% - 32px);
+  margin: 45px auto 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-cointar-text {
+    display: flex;
+    flex-direction: column;
+  }
+  &__span {
+    font-family: Saira;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  &__title {
+    font-family: Abhaya Libre;
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 76px;
+
+    background: linear-gradient(90deg, #d6a654, #ffe0ab, #ffe5b9, #ffd389);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+    max-width: 500px;
+    margin-bottom: 32px;
+  }
+  &__paragraph {
+    font-family: Saira;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    max-width: 341px;
+    color: #ffffff;
+
+    margin-bottom: 72px;
+  }
+  &__button {
+    width: 169px;
+    height: 53px;
+    border-radius: 40px;
+    background: #ffffff;
+
+    color: #16121e;
+    font-family: Saira;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}

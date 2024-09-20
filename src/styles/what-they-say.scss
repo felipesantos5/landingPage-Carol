@@ -1,0 +1,99 @@
+.whattheysay {
+  max-width: 1200px;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+
+  &__title {
+    font-family: Abhaya Libre;
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 77px;
+
+    background: linear-gradient(90deg, #d6a654, #ffe0ab, #ffe5b9, #dca13c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+    margin-bottom: 32px;
+  }
+
+  &__description {
+    font-family: Saira;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+
+    color: #ffffff;
+  }
+
+  &__card-wrapper {
+    margin-top: 66px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+.cardwhat {
+  max-width: 384px;
+  height: fit-content;
+  padding: 32px 24px;
+
+  background: rgba(21, 21, 21, 0.4);
+  border-radius: 24px;
+
+  border: 1px solid rgba(255, 227, 178, 1);
+
+  &:nth-child(5) {
+    transform: translateY(-84px);
+  }
+
+  &:nth-child(7) {
+    transform: translateY(-168px);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 27px;
+  }
+
+  &__client-wrapper {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__name-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__name {
+    font-family: Saira;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #ffffff;
+  }
+
+  &__profession {
+    font-family: Saira;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #ffffff;
+  }
+
+  &__description {
+    font-family: Saira;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #ffffff;
+  }
+}

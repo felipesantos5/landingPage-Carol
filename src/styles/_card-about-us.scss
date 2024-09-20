@@ -1,0 +1,62 @@
+.section-cards {
+  max-width: 1200px;
+  width: calc(100% - 32px);
+  margin: 96px auto 0;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 25px;
+}
+
+.card {
+  max-width: 350px;
+  height: 345px;
+  padding: 36px 24px;
+
+  background: rgb(214, 166, 84);
+  background: radial-gradient(circle, rgba(214, 166, 84, 1) 50%, rgba(195, 138, 51, 1) 100%);
+  border-radius: 12px;
+
+  position: relative;
+
+  &__title {
+    font-family: Abhaya Libre;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38px;
+    color: #5b3102;
+    margin-bottom: 27px;
+  }
+
+  &__description {
+    font-family: Saira;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #0a0c14;
+  }
+
+  &__wrapper-img {
+    background: rgba(141, 88, 35, 0.8);
+    box-shadow: 0px 10px 29px 0px rgba(241, 113, 0, 0.24);
+    border-radius: 69.5px 0px 12px 4px;
+
+    width: 136px;
+    height: 102px;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 48px;
+      max-height: 48px;
+      transform: translate(14px, 7px);
+    }
+  }
+}
