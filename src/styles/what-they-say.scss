@@ -1,8 +1,12 @@
 .whattheysay {
-  max-width: 1200px;
-  width: calc(100% - 32px);
-  margin: 0 auto;
+  position: relative;
 
+  &__container {
+    max-width: 1200px;
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    padding-top: 65px;
+  }
   &__title {
     font-family: Abhaya Libre;
     font-size: 96px;
@@ -35,6 +39,20 @@
     flex-wrap: wrap;
     gap: 24px;
   }
+
+  &__img-background {
+    position: absolute;
+    right: 0;
+    top: 360px;
+    pointer-events: none;
+  }
+
+  &__spot-light {
+    position: absolute;
+    right: 0;
+    top: 460px;
+    pointer-events: none;
+  }
 }
 
 .cardwhat {
@@ -43,6 +61,7 @@
   padding: 32px 24px;
 
   background: rgba(21, 21, 21, 0.4);
+  backdrop-filter: blur(15px);
   border-radius: 24px;
 
   border: 1px solid rgba(255, 227, 178, 1);
