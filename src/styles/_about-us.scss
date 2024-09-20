@@ -1,11 +1,12 @@
 .about-us {
-  margin: 73px auto 0;
+  margin: 0 auto;
   position: relative;
+  padding-top: 73px;
 
   &__shadow {
     position: absolute;
     top: -350px;
-    // height: 1000px;
+    pointer-events: none;
   }
 
   &__container {
@@ -43,32 +44,18 @@
     }
     &-paragraph2 {
       max-width: 486px;
-      margin-bottom: 0;
+      margin-bottom: 56px;
     }
   }
 
   &__video-container {
-    // border: 1px solid #ff8008;
     z-index: 1;
     position: relative;
     margin-top: 42px;
-
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   right: -30px;
-    //   top: 165px;
-
-    //   width: 100px;
-    //   height: 260px;
-
-    //   border: 5px solid #ffc837;
-    //   border-radius: 40px;
-    // }
   }
 
   &__services {
-    padding-top: 113px;
+    padding-top: 56px;
 
     &-title {
       font-family: "Abhaya Libre";
@@ -95,5 +82,35 @@
 
       max-width: 709px;
     }
+  }
+}
+
+.video-container {
+  position: relative;
+  border-radius: 16px;
+  padding: 1px;
+
+  width: 362px;
+
+  background: linear-gradient(135deg, #ff8008, #ffc837);
+  background-clip: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    border-radius: 16px;
+    z-index: -1;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    border: none;
   }
 }
