@@ -1,7 +1,7 @@
 import { Header } from "./components/sections/header";
 import { AboutUs } from "./components/sections/about-us";
 import { Initial } from "./components/sections/initial";
-import { Cards } from "./components/about-us-card/cards";
+import { Services } from "./components/sections/services";
 import { WhoWorks } from "./components/sections/jorney";
 import { WhatTheySay } from "./components/sections/whatTheySay";
 import { Footer } from "./components/sections/footer";
@@ -13,7 +13,7 @@ function App() {
         <Header />
         <Initial />
         <AboutUs />
-        <Cards />
+        <Services />
         <WhoWorks />
         <WhatTheySay />
         <Footer />

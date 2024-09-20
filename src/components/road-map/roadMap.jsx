@@ -1,6 +1,6 @@
-import { RoadMapCard } from "../road-map/roadMapCard";
+import { RoadMapCard } from "./roadMapCard";
 
-export const RoadMapSection = () => {
+export const RoadMap = () => {
   return (
     <section className="roadmapsection">
       <div className="roadmapwrapper roadmapwrapper-first">

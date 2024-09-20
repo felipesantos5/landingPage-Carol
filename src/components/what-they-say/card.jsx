@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import aspas from "../../assets/aspas.svg";
+import aspas from "../../assets/what-they-say/aspas.svg";
 
 export const CardWhat = ({ profileImg, name, profession, description }) => {
   return (
