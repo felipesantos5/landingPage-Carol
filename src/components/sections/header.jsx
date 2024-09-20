@@ -5,16 +5,16 @@ export const Header = () => {
     <header className="header container">
       <img src={logo} alt="" className="header-logo" />
       <nav className="header__nav">
-        <a href="" className="header__nav-item">
+        <a href="#about-us" className="header__nav-item">
           Sobre nós
         </a>
-        <a href="" className="header__nav-item">
+        <a href="#services" className="header__nav-item">
           Serviços
         </a>
-        <a href="" className="header__nav-item">
+        <a href="#process" className="header__nav-item">
           Processos
         </a>
-        <a href="" className="header__nav-item">
+        <a href="#clients" className="header__nav-item">
           Clientes
         </a>
       </nav>
