@@ -38,9 +38,16 @@
 
   &__option-wrapper {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 73px;
 
     margin-block: 65px;
+
+    @media (max-width: 1024px) {
+      gap: 36px;
+    }
   }
 
   &__item {

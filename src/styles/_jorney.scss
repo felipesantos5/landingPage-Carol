@@ -15,7 +15,7 @@
 
   &__title {
     font-family: Abhaya Libre ExtraBold;
-    font-size: 96px;
+    font-size: 84px;
     font-weight: 800;
     line-height: 77px;
     text-align: center;
@@ -28,6 +28,10 @@
 
     margin-bottom: 32px;
     max-width: 1090px;
+
+    @media (min-width: 480px) {
+      font-size: 96px;
+    }
   }
 
   &__description {
@@ -40,5 +44,75 @@
 
     max-width: 813px;
     margin-bottom: 45px;
+  }
+}
+
+.roadmapwrapper {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 840px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__line {
+    width: 196px;
+    height: 5px;
+
+    border-radius: 10px;
+    border: none;
+
+    transform: translateY(26px);
+
+    background: linear-gradient(90deg, rgba(255, 128, 8, 1) 50%, rgba(255, 200, 55, 1) 100%);
+
+    @media (max-width: 840px) {
+      display: none;
+    }
+  }
+
+  &-first {
+    margin-bottom: 65px;
+
+    @media (max-width: 840px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.roadmapcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__number {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 60px;
+    text-align: center;
+    color: #d6a654;
+  }
+
+  &__title {
+    font-family: Abhaya Libre;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 31px;
+    text-align: center;
+    color: #ffffff;
+
+    margin-bottom: 6px;
+  }
+
+  &__description {
+    font-family: Saira;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+    max-width: 241px;
   }
 }

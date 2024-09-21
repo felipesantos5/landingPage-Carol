@@ -6,11 +6,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+
+  @media (max-width: 820px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   &-cointar-text {
     display: flex;
     flex-direction: column;
   }
+
   &__span {
     font-family: Saira;
     font-size: 16px;
@@ -19,9 +26,10 @@
     color: #ffffff;
     margin-bottom: 10px;
   }
+
   &__title {
     font-family: Abhaya Libre;
-    font-size: 96px;
+    font-size: 70px;
     font-weight: 800;
     line-height: 76px;
 
@@ -33,17 +41,26 @@
 
     max-width: 500px;
     margin-bottom: 32px;
+
+    @media (min-width: 520px) {
+      font-size: 96px;
+    }
   }
+
   &__paragraph {
     font-family: Saira;
     font-size: 20px;
     font-weight: 300;
     line-height: 28px;
-    max-width: 341px;
     color: #ffffff;
 
     margin-bottom: 72px;
+
+    @media (min-width: 820px) {
+      max-width: 341px;
+    }
   }
+
   &__button {
     width: 169px;
     height: 53px;
@@ -60,5 +77,89 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+  }
+}
+
+.form {
+  background: rgba(21, 21, 21, 0.4);
+  backdrop-filter: blur(15px);
+
+  padding: 32px 24px;
+  border-radius: 24px;
+  border: 1px solid #ffe3b2;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  width: 100%;
+
+  @media (min-width: 820px) {
+    max-width: 444px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+  }
+
+  &__label {
+    font-family: Fira Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #ffffff;
+    opacity: 80%;
+  }
+
+  &__input {
+    font-family: Fira Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    border-bottom: 1px solid #536a82;
+
+    &::placeholder {
+      color: #d6a654;
+    }
+
+    &--error {
+      border-bottom: 1px solid red;
+    }
+  }
+
+  &__error {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    position: absolute;
+    bottom: -20px;
+  }
+
+  &__submit {
+    background: radial-gradient(circle, rgb(214, 166, 84) 50%, rgb(195, 138, 51) 100%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+
+    font-family: fira code;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+
+    transition: 0.3s;
+
+    &:hover {
+      background: radial-gradient(circle, rgb(201, 152, 72) 50%, rgb(195, 138, 51) 100%);
+    }
   }
 }

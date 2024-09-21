@@ -9,9 +9,10 @@
   }
   &__title {
     font-family: Abhaya Libre;
-    font-size: 96px;
+    font-size: 80px;
     font-weight: 800;
     line-height: 77px;
+    text-align: center;
 
     background: linear-gradient(90deg, #d6a654, #ffe0ab, #ffe5b9, #dca13c);
     -webkit-background-clip: text;
@@ -20,6 +21,11 @@
     color: transparent;
 
     margin-bottom: 32px;
+
+    @media (min-width: 500px) {
+      font-size: 96px;
+      text-align: left;
+    }
   }
 
   &__description {
@@ -27,8 +33,12 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-
     color: #ffffff;
+    text-align: center;
+
+    @media (min-width: 500px) {
+      text-align: left;
+    }
   }
 
   &__card-wrapper {
@@ -61,17 +71,45 @@
   padding: 32px 24px;
 
   background: rgba(21, 21, 21, 0.4);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(4px);
   border-radius: 24px;
 
   border: 1px solid rgba(255, 227, 178, 1);
 
+  &:nth-child(4) {
+    @media (max-width: 1231px) {
+      transform: translateY(-84px);
+    }
+    @media (max-width: 840px) {
+      transform: translateY(0);
+    }
+  }
+
   &:nth-child(5) {
     transform: translateY(-84px);
+
+    @media (max-width: 1231px) {
+      transform: translateY(0);
+    }
+  }
+
+  &:nth-child(6) {
+    @media (max-width: 1231px) {
+      transform: translateY(-84px);
+    }
+    @media (max-width: 840px) {
+      transform: translateY(0);
+    }
   }
 
   &:nth-child(7) {
     transform: translateY(-168px);
+    @media (max-width: 1231px) {
+      transform: translateY(-56px);
+    }
+    @media (max-width: 840px) {
+      transform: translateY(0);
+    }
   }
 
   &__header {

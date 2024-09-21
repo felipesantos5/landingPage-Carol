@@ -12,16 +12,22 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
 
     max-width: 1200px;
     width: calc(100% - 32px);
     margin: 0 auto;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
   }
 
   &__text {
     &-title {
       font-family: "Abhaya Libre";
-      font-size: 96px;
+      font-size: 80px;
       font-weight: 800;
       line-height: 77px;
       background: linear-gradient(90deg, #d6a654, #ffe0ab, #ffe5b9, #ffd389);
@@ -30,6 +36,10 @@
       background-clip: text;
       color: transparent;
       margin-bottom: 20px;
+
+      @media (min-width: 480px) {
+        font-size: 96px;
+      }
     }
 
     &-paragraph1,
@@ -39,12 +49,19 @@
       font-weight: 400;
       line-height: 28px;
       color: #ffffff;
+
       margin-bottom: 32px;
-      max-width: 709px;
+
+      @media (min-width: 1024px) {
+        max-width: 709px;
+      }
     }
     &-paragraph2 {
-      max-width: 486px;
       margin-bottom: 56px;
+
+      @media (min-width: 1024px) {
+        max-width: 486px;
+      }
     }
   }
 
@@ -59,7 +76,7 @@
 
     &-title {
       font-family: "Abhaya Libre";
-      font-size: 96px;
+      font-size: 70px;
       font-weight: 800;
       line-height: 77px;
 
@@ -69,8 +86,15 @@
       background-clip: text;
       color: transparent;
 
-      max-width: 691px;
       margin-bottom: 20px;
+
+      @media (min-width: 1024px) {
+        max-width: 691px;
+      }
+
+      @media (min-width: 500px) {
+        font-size: 96px;
+      }
     }
 
     &-description {
@@ -80,7 +104,9 @@
       line-height: 28px;
       color: #ffffff;
 
-      max-width: 709px;
+      @media (min-width: 1024px) {
+        max-width: 709px;
+      }
     }
   }
 }
@@ -88,12 +114,22 @@
 .video-container {
   position: relative;
   border-radius: 16px;
-  padding: 1px;
+  padding: 1.5px;
 
-  width: 362px;
+  width: 100%;
+  height: 400px;
+  max-height: 640px;
 
   background: linear-gradient(135deg, #ff8008, #ffc837);
   background-clip: border-box;
+
+  margin-top: 24px;
+
+  @media (min-width: 1024px) {
+    max-width: 352px;
+    height: unset;
+    margin-top: 43px;
+  }
 
   &::before {
     content: "";
