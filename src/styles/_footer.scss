@@ -1,8 +1,12 @@
+.testeee {
+  padding-top: 80px;
+  overflow-x: hidden;
+}
+
 .footer {
   background: url(../assets/footer/footer-background.png) no-repeat;
-  background-position-y: 244px;
+  background-size: cover;
   overflow-x: hidden;
-  padding-top: 100px;
 
   &__wrapper {
     max-width: 1200px;
