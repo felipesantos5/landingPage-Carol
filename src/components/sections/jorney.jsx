@@ -1,4 +1,6 @@
 import { RoadMap } from "../road-map/roadMap";
+import spotlightleft from "../../assets/spotlight-jorney.png";
+import spotlightright from "../../assets/spot-light-right-whatabout.png";
 
 export const WhoWorks = () => {
   return (
@@ -9,6 +11,10 @@ export const WhoWorks = () => {
 
         <RoadMap />
       </div>
+
+      <img src={spotlightleft} alt="feixe de luz esquerda" className="jorney__spotlight-left" />
+
+      <img src={spotlightright} alt="feixe de luz direita" className="jorney__spotlight-right" />
     </section>
   );
 };

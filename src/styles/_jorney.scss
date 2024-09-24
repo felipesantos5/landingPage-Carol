@@ -1,5 +1,6 @@
 .jorney {
   background: url(../assets/stars.png);
+  position: relative;
 
   &__container {
     max-width: 1200px;
@@ -44,6 +45,21 @@
 
     max-width: 813px;
     margin-bottom: 45px;
+  }
+
+  &__spotlight-left {
+    position: absolute;
+    left: -100px;
+    top: -100px;
+
+    pointer-events: none;
+  }
+
+  &__spotlight-right {
+    position: absolute;
+    right: 0;
+    top: 560px;
+    pointer-events: none;
   }
 }
 

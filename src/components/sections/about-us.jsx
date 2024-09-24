@@ -32,7 +32,6 @@ export const AboutUs = () => {
           ></iframe>
         </div>
       </div>
-      <div className="about-us__container"></div>
     </section>
   );
 };
