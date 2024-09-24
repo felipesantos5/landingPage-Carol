@@ -1,6 +1,10 @@
-.testeee {
-  padding-top: 80px;
+.footer-padding {
+  padding-top: 100px;
   overflow-x: hidden;
+
+  @media (min-width: 1024px) {
+    padding-top: 80px;
+  }
 }
 
 .footer {
