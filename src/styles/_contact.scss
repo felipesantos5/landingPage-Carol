@@ -1,0 +1,21 @@
+.contact {
+  max-width: 1200px;
+  margin: 40px auto 40px;
+  width: calc(100% - 64px);
+
+  &__title {
+    font-family: Abhaya Libre ExtraBold;
+    font-size: 84px;
+    font-weight: 800;
+    line-height: 77px;
+    text-align: center;
+
+    background: linear-gradient(90deg, #d6a654, #ffe0ab, #ffe5b9, #ffd389);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+    margin-bottom: 32px;
+  }
+}

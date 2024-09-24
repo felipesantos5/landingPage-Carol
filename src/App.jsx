@@ -4,6 +4,7 @@ import { Initial } from "./components/sections/initial";
 import { Services } from "./components/sections/services";
 import { WhoWorks } from "./components/sections/jorney";
 import { WhatTheySay } from "./components/sections/whatTheySay";
+import { Contact } from "./components/sections/contact";
 import { Footer } from "./components/sections/footer";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Services />
         <WhoWorks />
         <WhatTheySay />
+        <Contact />
         <Footer />
       </main>
     </div>
