@@ -27,6 +27,7 @@ export const AboutUs = () => {
           <iframe
             src="https://www.youtube.com/embed/xcJtL7QggTI"
             title="Video youtube"
+            loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
