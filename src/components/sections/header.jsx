@@ -1,9 +1,25 @@
+import React, { useState, useEffect } from "react";
 import logo from "../../assets/header/logo.svg";
 
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header container">
-      <img src={logo} alt="" className="header-logo" />
+      <img src={logo} alt="Logo" className="header-logo" />
+
+      <button className="menu-toggle" onClick={toggleMenu}>
+        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 18L20 18" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+          <path d="M4 12L20 12" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+          <path d="M4 6L20 6" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+
       <nav className="header__nav">
         <a href="#about-us" className="header__nav-item">
           Sobre nós
@@ -18,6 +34,7 @@ export const Header = () => {
           Clientes
         </a>
       </nav>
+
       <div className="header__social">
         <a href="">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,6 +80,31 @@ export const Header = () => {
           </svg>
         </a>
       </div>
+
+      {isMenuOpen && (
+        <div className="modal">
+          <button className="closeButton" onClick={toggleMenu}>
+            X
+          </button>
+          <nav className="header__nav-modal">
+            <a href="#about-us" onClick={toggleMenu} className="header__nav-item">
+              Sobre nós
+            </a>
+
+            <a href="#services" onClick={toggleMenu} className="header__nav-item">
+              Serviços
+            </a>
+
+            <a href="#process" onClick={toggleMenu} className="header__nav-item">
+              Processos
+            </a>
+
+            <a href="#clients" onClick={toggleMenu} className="header__nav-item">
+              Clientes
+            </a>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };
