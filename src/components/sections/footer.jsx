@@ -27,13 +27,13 @@ export const Footer = () => {
           </ul>
 
           <div className="footer__midia-wrapper">
-            <a href="">
+            <a href="https://www.instagram.com/agenciacarolquintana" target="_blank">
               <img src={instagram} alt="instagram" />
             </a>
-            <a href="">
+            <a href="https://api.whatsapp.com/send?phone=554833749881" target="_blank">
               <img src={whatsapp} alt="whatsapp" />
             </a>
-            <a href="">
+            <a href="" target="_blank">
               <img src={linkedin} alt="linkedin" />
             </a>
           </div>
