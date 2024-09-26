@@ -1,4 +1,4 @@
-import shadow from "../../assets/shadow-about-us.png";
+import shadow from "../../assets/shadow-about-us.svg";
 
 export const AboutUs = () => {
   return (
