@@ -1,6 +1,6 @@
 import { RoadMap } from "../road-map/roadMap";
-import spotlightleft from "../../assets/spotlight-jorney.png";
-import spotlightright from "../../assets/spot-light-right-whatabout.png";
+import spotlightleft from "../../assets/jorney/spotlight-left-jorney.svg";
+import spotlightright from "../../assets/jorney/spotlight-right-jorney.svg";
 
 export const WhoWorks = () => {
   return (
