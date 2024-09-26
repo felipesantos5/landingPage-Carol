@@ -1,5 +1,6 @@
 .jorney {
   background: url(../assets/stars.png);
+  background-size: contain;
   position: relative;
 
   &__container {
@@ -57,8 +58,9 @@
 
   &__spotlight-right {
     position: absolute;
-    right: 0;
+    left: -100px;
     top: 560px;
+
     pointer-events: none;
   }
 }
