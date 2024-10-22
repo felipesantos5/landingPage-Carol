@@ -4,7 +4,7 @@ export const Form = () => {
   const [formData, setFormData] = useState({
     nome: "",
     instagram: "",
-    faturamento: "",
+    telefone: "",
     email: "",
     funcionarios: "",
   });
@@ -24,7 +24,7 @@ export const Form = () => {
     const errors = {};
     if (!formData.nome) errors.nome = "Nome é obrigatório.";
     if (!formData.instagram) errors.instagram = "Instagram é obrigatório.";
-    if (!formData.faturamento) errors.faturamento = "Faturamento é obrigatório.";
+    if (!formData.telefone) errors.telefone = "telefone é obrigatório.";
     if (!formData.email) {
       errors.email = "Email é obrigatório.";
     } else if (!validateEmail(formData.email)) {
@@ -64,18 +64,18 @@ export const Form = () => {
       </div>
 
       <div className="form__container">
-        <label htmlFor="faturamento" className="form__label">
-          Faturamento
+        <label htmlFor="telefone" className="form__label">
+          telefone
         </label>
         <input
           type="text"
-          name="faturamento"
-          className={`form__input ${formErrors.faturamento ? "form__input--error" : ""}`}
+          name="telefone"
+          className={`form__input ${formErrors.telefone ? "form__input--error" : ""}`}
           placeholder="ex: R$ 30,000,00"
-          value={formData.faturamento}
+          value={formData.telefone}
           onChange={handleInputChange}
         />
-        {formErrors.faturamento && <span className="form__error">{formErrors.faturamento}</span>}
+        {formErrors.telefone && <span className="form__error">{formErrors.telefone}</span>}
       </div>
 
       <div className="form__container">
