@@ -6,17 +6,19 @@ import AnimatedSection from "../animated-section/animatedSection";
 
 export const WhoWorks = () => {
   return (
-    <AnimatedSection className="jorney">
-      <div className="jorney__container" id="process">
-        <h2 className="jorney__title">Como Funciona sua Jornada Conosco?</h2>
-        <p className="jorney__description">Nosso método é simples e eficaz, agregando Tempo e diminuindo seu Estresse. Focamos em entender suas necessidades e agregar soluções sob medida.</p>
+    <section className="jorney">
+      <AnimatedSection>
+        <div className="jorney__container" id="process">
+          <h2 className="jorney__title">Como Funciona sua Jornada Conosco?</h2>
+          <p className="jorney__description">Nosso método é simples e eficaz, agregando Tempo e diminuindo seu Estresse. Focamos em entender suas necessidades e agregar soluções sob medida.</p>
 
-        <RoadMap />
-      </div>
+          <RoadMap />
+        </div>
 
-      <img src={spotlightleft} alt="feixe de luz esquerda" className="jorney__spotlight-left" />
+        <img src={spotlightleft} alt="feixe de luz esquerda" className="jorney__spotlight-left" />
 
-      <img src={spotlightright} alt="feixe de luz direita" className="jorney__spotlight-right" />
-    </AnimatedSection>
+        <img src={spotlightright} alt="feixe de luz direita" className="jorney__spotlight-right" />
+      </AnimatedSection>
+    </section>
   );
 };
