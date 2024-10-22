@@ -30,9 +30,9 @@
   &__text {
     &-title {
       font-family: "Abhaya Libre";
-      font-size: 80px;
+      font-size: 70px;
       font-weight: 800;
-      line-height: 77px;
+      line-height: 54px;
       background: linear-gradient(90deg, #d6a654, #ffe0ab, #ffe5b9, #ffd389);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -42,6 +42,7 @@
 
       @media (min-width: 480px) {
         font-size: 96px;
+        line-height: 77px;
       }
     }
 
@@ -81,7 +82,7 @@
       font-family: "Abhaya Libre";
       font-size: 70px;
       font-weight: 800;
-      line-height: 77px;
+      line-height: 58px;
 
       background: linear-gradient(90deg, #d6a654, #ffe0ab, #ffe5b9, #ffd389);
       -webkit-background-clip: text;
@@ -97,6 +98,7 @@
 
       @media (min-width: 520px) {
         font-size: 96px;
+        line-height: 77px;
       }
     }
 
