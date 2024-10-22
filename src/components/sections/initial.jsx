@@ -1,12 +1,13 @@
 import { Form } from "../form-initial/form";
+import AnimatedSection from "../animated-section/animatedSection";
 
 export const Initial = () => {
   return (
     <section className="initial">
-      <div className="initial-cointar-text">
-        <p className="initial__span">Esqueça o modelo Agência... Conheça o</p>
-        <h1 className="initial__title">Grupo Carol Quintana</h1>
-        <p className="initial__paragraph">Estratégia alinhada, fluxo de vendas e qualificação de atendimento.</p>
+      <AnimatedSection className="initial-cointar-text">
+        <h1 className="initial__title">tenha mais que seus parentes curtindo suas publicações</h1>
+
+        <p className="initial__paragraph">atraiam clientes que comprão seu valor e não julguam seu preço</p>
         <button className="initial__button">
           Contate-nos{" "}
           <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,10 +18,10 @@ export const Initial = () => {
             />
           </svg>
         </button>
-      </div>
-      <div className="initial__form">
+      </AnimatedSection>
+      {/* <div className="initial__form">
         <Form />
-      </div>
+      </div> */}
     </section>
   );
 };

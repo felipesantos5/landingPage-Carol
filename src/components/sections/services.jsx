@@ -6,9 +6,11 @@ import trafego from "../../assets/card/trafego.svg";
 import acessoria from "../../assets/card/assessoria.svg";
 import prospeccao from "../../assets/card/prospeccao.svg";
 
+import AnimatedSection from "../animated-section/animatedSection";
+
 export const Services = () => {
   return (
-    <div className="section-cards">
+    <AnimatedSection className="section-cards">
       <Card
         title={"Social Media"}
         description={
@@ -42,6 +44,6 @@ export const Services = () => {
         description={"Não tem a pessoa ideal para gerar vendas? Nossa empresa tem uma equipe especializada em SDR para conversão de leads e prospecção de clientes inativos."}
         image={prospeccao}
       />
-    </div>
+    </AnimatedSection>
   );
 };

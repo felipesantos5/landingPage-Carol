@@ -1,11 +1,12 @@
 import shadow from "../../assets/shadow-about-us.svg";
 import { useState } from "react";
+import AnimatedSection from "../animated-section/animatedSection";
 
 export const AboutUs = () => {
   const [isIframeLoaded, setIframeLoaded] = useState(false);
 
   return (
-    <section className="about-us" id="#about-us">
+    <AnimatedSection className="about-us" id="#about-us">
       <img src={shadow} alt="" className="about-us__shadow" />
       <div className="about-us__container">
         <div className="about-us__text" id="about-us">
@@ -35,6 +36,6 @@ export const AboutUs = () => {
           )}
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 };
