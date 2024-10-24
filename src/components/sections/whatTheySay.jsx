@@ -6,6 +6,14 @@ import splotLight from "../../assets/what-they-say/spot-light.svg";
 
 import AnimatedSection from "../animated-section/animatedSection";
 
+import carlos from "../../assets/what-they-say/carlos.jpeg";
+import ricardo from "../../assets/what-they-say/ricardo.jpeg";
+import mariana from "../../assets/what-they-say/mariana.jpeg";
+import eduardo from "../../assets/what-they-say/eduardo.jpeg";
+import pedro from "../../assets/what-they-say/pedro.jpeg";
+import marcelo from "../../assets/what-they-say/marcelo.jpeg";
+import claudia from "../../assets/what-they-say/claudia.jpeg";
+
 export const WhatTheySay = () => {
   return (
     <section className="whattheysay" id="clients">
@@ -14,7 +22,7 @@ export const WhatTheySay = () => {
         <p className="whattheysay__description">Confira alguns dos feedback de nossos clientes:</p>
         <div className="whattheysay__card-wrapper">
           <CardWhat
-            profileImg={profileImg}
+            profileImg={carlos}
             name={"Carlos"}
             profession={"Gerente de Publicidade"}
             description={
@@ -23,7 +31,7 @@ export const WhatTheySay = () => {
           />
 
           <CardWhat
-            profileImg={profileImg}
+            profileImg={ricardo}
             name={"Ricardo"}
             profession={"Diretor Comercial"}
             description={
@@ -32,7 +40,7 @@ export const WhatTheySay = () => {
           />
 
           <CardWhat
-            profileImg={profileImg}
+            profileImg={mariana}
             name={"Mariana"}
             profession={"Gerente de Mídia"}
             description={
@@ -41,7 +49,7 @@ export const WhatTheySay = () => {
           />
 
           <CardWhat
-            profileImg={profileImg}
+            profileImg={eduardo}
             name={"Eduardo"}
             profession={"Coordenador de Marketing Digital"}
             description={
@@ -50,7 +58,7 @@ export const WhatTheySay = () => {
           />
 
           <CardWhat
-            profileImg={profileImg}
+            profileImg={pedro}
             name={"Pedro"}
             profession={"Gerente de Vendas e Marketing"}
             description={
@@ -59,7 +67,7 @@ export const WhatTheySay = () => {
           />
 
           <CardWhat
-            profileImg={profileImg}
+            profileImg={marcelo}
             name={"Marcelo"}
             profession={"Gerente de Performance Digital"}
             description={
@@ -68,7 +76,7 @@ export const WhatTheySay = () => {
           />
 
           <CardWhat
-            profileImg={profileImg}
+            profileImg={claudia}
             name={"Cládia"}
             profession={"Diretor de Marketing"}
             description={
@@ -77,8 +85,8 @@ export const WhatTheySay = () => {
           />
         </div>
       </AnimatedSection>
-      <img src={aspasBackground} alt="" className="whattheysay__img-background" />
-      <img src={splotLight} alt="" className="whattheysay__spot-light" />
+      <img src={aspasBackground} alt="aspas de fundo" className="whattheysay__img-background" />
+      <img src={splotLight} alt="feixe de luz de fundo" className="whattheysay__spot-light" />
     </section>
   );
 };
